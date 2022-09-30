@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxes with grid</title>
+    <style media="screen">
+        .container{
+            width: 600px;
+            height: 700px;
+            margin-left: 400px;
+            border: solid 2px white;
+            box-shadow: 0 5px 10px goldenrod;
+            background-color: antiquewhite;
+            display: grid;
+            font-size: 30px;
+            font-weight: bold;
+            font-style: oblique;
+            font-style: italic;
+            color: white;
+            text-align: center;
+            text-shadow: 0 5px 10px black;
+            grid-template-columns: 600px;
+            grid-template-rows: 100px 500px 100px;
+        }
+        .header{
+            background-color: rgb(59, 107, 107);
+
+        }
+        .main{
+            background-color: rgb(145, 176, 212);
+            display: grid;
+            grid-template-columns: 600px;
+            grid-template-rows: 200px 300px;
+            
+        }
+        .features{
+            background-color: rgb(108, 104, 67);
+            border: solid 2px white;
+        } 
+        .articles{
+            background-color: rgb(123, 57, 82);
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 10px;
+            border: solid 2px white;
+        }
+        .art1{
+            background-color: rgb(96, 42, 42);
+            margin: 30px;
+        }
+        .art2{
+            background-color: rgb(68, 103, 65);
+            margin: 30px;
+        }
+        .art3{
+            background-color: rgb(123, 32, 46);
+            margin: 30px;
+        }
+        .art{
+            border: 2px solid white;
+            box-shadow: 3px 5px 10px white;
+            border-radius: 0 20px;
+        }
+        .footer{
+            background-color: black;
+            text-transform: 0 3px 7px rgb(202, 19, 19);
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">logo</div>
+        <div class="main">
+            <div class="features">Hey! i'm here.......</div>
+            <div class="articles">
+                <div class="art art1">article 1</div>
+                <div class="art art2">article 2</div>
+                <div class="art art3">article 3</div>
+            </div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
